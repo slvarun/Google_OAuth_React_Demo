@@ -27,8 +27,10 @@ const config = {
     redirectUrl: process.env.REDIRECT_URL,
     clientUrl: process.env.CLIENT_URL,
     tokenSecret: process.env.TOKEN_SECRET,
-    tokenExpiration: 36000000000,
+    tokenExpiration: 36000,
 }
+
+
 app.use(
     cors({
         origin: [config.clientUrl],
